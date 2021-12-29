@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
 
     return {
-        fallback: true,
+        fallback: 'blocking',
         paths: campusDetails.map((campus) => ({
             params: { campusId: campus._id.toString() }
         }))
