@@ -1,9 +1,9 @@
 import CampusItem from './CampusItem';
-import classes from './CampusItem.module.css';
+import classes from './CampusList.module.css';
 
 const CampusList = (props) => {
     return (
-        <ul className={classes.list}>
+        <div className={classes.listContainer}>
             {props.campuses.map((campus) => (
                 <CampusItem
                     key={campus.id}
@@ -13,7 +13,18 @@ const CampusList = (props) => {
                     address={campus.address}
                 />
             ))}
-        </ul>
+        </div>
+        // <ul className={classes.list}>
+        //     {props.campuses.map((campus) => (
+        //         <CampusItem
+        //             key={campus.id}
+        //             id={campus.id}
+        //             image={campus.image}
+        //             title={campus.title}
+        //             address={campus.address}
+        //         />
+        //     ))}
+        // </ul>
     );
 };
 

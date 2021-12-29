@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
 
     return {
-        fallback: false,
+        fallback: true,
         paths: campusDetails.map((campus) => ({
             params: { campusId: campus._id.toString() }
         }))

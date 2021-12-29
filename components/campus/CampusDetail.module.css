@@ -1,7 +1,8 @@
 .detail {
     text-align: center;
+    width: 60%;
+    margin: 3rem auto;
   }
-  
   .detail img {
     width: 100%;
   }
